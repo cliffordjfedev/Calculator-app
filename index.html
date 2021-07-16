@@ -37,7 +37,7 @@
 
 <body>
 
-  <div class="container blue-main-bg">
+  <div class="container blue-main-bg" id="container">
     <section class="main mx-auto">
       <header>
         <div class="d-flex justify-content-between align-items-center">
@@ -45,13 +45,13 @@
           <div class="d-flex align-items-center">
             <span>Theme</span>
             <div class="toggle-wrapper">
-              <input type="radio" name="state" id="option1" checked>
+              <input type="radio" name="state" id="option1" checked class="mr-4">
               <label for="option1">1</label>
 
-              <input type="radio" name="state" id="option2">
+              <input type="radio" name="state" id="option2" class="">
               <label for="option2">2</label>
 
-              <input type="radio" name="state" id="option3">
+              <input type="radio" name="state" id="option3" class="ml-4">
               <label for="option3">3</label>
             </div>
           </div>
@@ -110,12 +110,12 @@
 
         <div class="col-12 px-0 d-flex">
           <div class="col-6 d-flex pr-2">
-            
+
             <button type="button" class="btn del-key-bg col" value="reset">Reset</button>
           </div>
 
           <div class="col-6 d-flex pl-2">
-            
+
             <button type="button" class="btn btn-equal-key col" value="=">=</button>
           </div>
         </div>
@@ -136,6 +136,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+
+    <script src="./assets/js/toggle-color.js"></script>
 </body>
 
 </html>

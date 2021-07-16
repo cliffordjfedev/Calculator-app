@@ -31,13 +31,15 @@ header .toggle-wrapper {
   header .toggle-wrapper label:first-of-type {
     z-index: 1; }
   header .toggle-wrapper input {
+    cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 2px;
     height: 100%;
-    width: 33%;
+    width: 23%;
     appearance: none;
     background: none;
-    opacity: 0.000001; }
+    opacity: 0.000001;
+    z-index: 5; }
   header .toggle-wrapper input:focus + label {
     text-decoration: underline; }
   header .toggle-wrapper label:first-of-type::before {
