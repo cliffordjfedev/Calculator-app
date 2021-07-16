@@ -5,13 +5,20 @@ body {
   background-color: #3a4764;
   height: 100vh;
   max-width: 1400px;
+  width: 100%;
   padding-top: 5rem; }
 
 .main {
-  width: 500px; }
+  width: 400px; }
 
 header h6 {
   color: white; }
+header span {
+  color: white;
+  font-size: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 10px; }
 header .toggle-wrapper {
   position: relative;
   display: flex;
@@ -66,5 +73,53 @@ header .toggle-wrapper {
     transform: translateX(0.7rem); }
   header .toggle-wrapper input:last-of-type:checked ~ label:last-of-type::after {
     transform: translateX(1.4rem); }
+
+.screen-box {
+  background-color: #182034;
+  border-radius: .25rem; }
+  .screen-box .form-control {
+    font-size: 2rem;
+    font-weight: 500; }
+  .screen-box input {
+    background-color: transparent;
+    border: transparent; }
+  .screen-box input:focus {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    box-shadow: none; }
+
+.keypad {
+  background-color: #232c43; }
+
+.text-white {
+  color: white !important; }
+
+.key-bg-white .btn-bg-color {
+  color: #637097;
+  background-color: #eae3dc;
+  border-color: #eae3dc;
+  font-weight: 600; }
+.key-bg-white .btn-bg-color:active {
+  color: #637097;
+  background-color: #eae3dc;
+  border-color: #eae3dc; }
+.key-bg-white .btn-bg-color:focus {
+  box-shadow: 0 0 0 0.2rem #b4a597; }
+.key-bg-white .blue-key-bg {
+  color: white;
+  background-color: #637097;
+  border-color: #637097;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase; }
+.key-bg-white .blue-key-bg:focus {
+  box-shadow: 0 0 0 0.2rem #404e72; }
+.key-bg-white .btn-equal-key {
+  color: white;
+  background-color: #d03f2f;
+  border-color: #d03f2f; }
+.key-bg-white .btn-equal-key:focus {
+  box-shadow: 0 0 0 0.2rem #93261a; }
 
 /*# sourceMappingURL=styles.css.map */
