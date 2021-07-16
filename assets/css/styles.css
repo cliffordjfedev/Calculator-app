@@ -2,7 +2,6 @@ body {
   font-family: 'Spartan', sans-serif; }
 
 .container {
-  background-color: #3a4764;
   height: 100vh;
   max-width: 1400px;
   width: 100%;
@@ -11,12 +10,8 @@ body {
 .main {
   width: 400px; }
 
-header h6 {
-  color: white; }
 header span {
-  color: white;
   font-size: 8px;
-  font-weight: 500;
   text-transform: uppercase;
   margin-right: 10px; }
 header .toggle-wrapper {
@@ -27,7 +22,6 @@ header .toggle-wrapper {
   border: 0;
   text-align: center; }
   header .toggle-wrapper label {
-    color: white;
     display: inline-block;
     font-size: 7px;
     position: relative;
@@ -46,8 +40,6 @@ header .toggle-wrapper {
     opacity: 0.000001; }
   header .toggle-wrapper input:focus + label {
     text-decoration: underline; }
-  header .toggle-wrapper:focus-within label:first-of-type::before {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px grey; }
   header .toggle-wrapper label:first-of-type::before {
     content: '';
     position: absolute;
@@ -55,14 +47,12 @@ header .toggle-wrapper {
     height: 12px;
     bottom: 0;
     left: -6px;
-    background-color: #232c43;
     border-radius: 0.95rem; }
   header .toggle-wrapper label:last-of-type::after {
     content: '';
     position: absolute;
     height: .555rem;
     width: .555rem;
-    background-color: #d03f2f;
     border-radius: 50%;
     bottom: 0.09rem;
     right: 1.33rem;
@@ -75,11 +65,10 @@ header .toggle-wrapper {
     transform: translateX(1.4rem); }
 
 .screen-box {
-  background-color: #182034;
   border-radius: .25rem; }
   .screen-box .form-control {
     font-size: 2rem;
-    font-weight: 500; }
+    font-weight: 700; }
   .screen-box input {
     background-color: transparent;
     border: transparent; }
@@ -89,37 +78,142 @@ header .toggle-wrapper {
     outline: none;
     box-shadow: none; }
 
-.keypad {
-  background-color: #232c43; }
+.del-key-bg {
+  font-size: 11px;
+  text-transform: uppercase; }
+
+.btn-bg-color,
+.del-key-bg,
+.btn-equal-key,
+header h6, header span,
+header label {
+  font-weight: 700; }
 
 .text-white {
   color: white !important; }
 
-.key-bg-white .btn-bg-color {
-  color: #637097;
-  background-color: #eae3dc;
-  border-color: #eae3dc;
-  font-weight: 600; }
-.key-bg-white .btn-bg-color:active {
-  color: #637097;
-  background-color: #eae3dc;
-  border-color: #eae3dc; }
-.key-bg-white .btn-bg-color:focus {
-  box-shadow: 0 0 0 0.2rem #b4a597; }
-.key-bg-white .blue-key-bg {
-  color: white;
-  background-color: #637097;
-  border-color: #637097;
-  font-weight: 600;
-  font-size: 11px;
-  text-transform: uppercase; }
-.key-bg-white .blue-key-bg:focus {
-  box-shadow: 0 0 0 0.2rem #404e72; }
-.key-bg-white .btn-equal-key {
-  color: white;
-  background-color: #d03f2f;
-  border-color: #d03f2f; }
-.key-bg-white .btn-equal-key:focus {
-  box-shadow: 0 0 0 0.2rem #93261a; }
+/* ==== Dark Blue Background ====*/
+.blue-main-bg {
+  background-color: #3a4764; }
+  .blue-main-bg header h6, .blue-main-bg header span {
+    color: white; }
+  .blue-main-bg .toggle-wrapper label {
+    color: white; }
+  .blue-main-bg .toggle-wrapper label:first-of-type::before {
+    background-color: #232c43; }
+  .blue-main-bg .toggle-wrapper label:last-of-type::after {
+    background-color: #d03f2f; }
+  .blue-main-bg .screen-box {
+    background-color: #182034; }
+    .blue-main-bg .screen-box input {
+      color: white; }
+  .blue-main-bg .keypad {
+    background-color: #232c43; }
+  .blue-main-bg .key-bg-white .btn-bg-color {
+    color: #637097;
+    background-color: #eae3dc;
+    border-color: #eae3dc; }
+  .blue-main-bg .key-bg-white .btn-bg-color:active {
+    color: #637097;
+    background-color: #eae3dc;
+    border-color: #eae3dc; }
+  .blue-main-bg .key-bg-white .btn-bg-color:focus {
+    box-shadow: 0 0 0 0.2rem #b4a597; }
+  .blue-main-bg .key-bg-white .del-key-bg {
+    color: white;
+    background-color: #637097;
+    border-color: #637097; }
+  .blue-main-bg .key-bg-white .del-key-bg:focus {
+    box-shadow: 0 0 0 0.2rem #404e72; }
+  .blue-main-bg .key-bg-white .btn-equal-key {
+    color: white;
+    background-color: #d03f2f;
+    border-color: #d03f2f; }
+  .blue-main-bg .key-bg-white .btn-equal-key:focus {
+    box-shadow: 0 0 0 0.2rem #93261a; }
+
+/* ==== End Dark Blue Background ====*/
+/* ==== Light Gray Background ====*/
+.light-main-bg {
+  background-color: #e6e6e6; }
+  .light-main-bg header h6, .light-main-bg header span {
+    color: #35352c; }
+  .light-main-bg .toggle-wrapper label {
+    color: #35352c; }
+  .light-main-bg .toggle-wrapper label:first-of-type::before {
+    background-color: #d1cccc; }
+  .light-main-bg .toggle-wrapper label:last-of-type::after {
+    background-color: #ca5502; }
+  .light-main-bg .screen-box {
+    background-color: #ededed; }
+    .light-main-bg .screen-box input {
+      color: #35352c; }
+  .light-main-bg .keypad {
+    background-color: #d1cccc; }
+  .light-main-bg .key-bg-white .btn-bg-color {
+    color: #35352c;
+    background-color: #e5e4e1;
+    border-color: #e5e4e1; }
+  .light-main-bg .key-bg-white .btn-bg-color:active {
+    color: #35352c;
+    background-color: #e5e4e1;
+    border-color: #e5e4e1; }
+  .light-main-bg .key-bg-white .btn-bg-color:focus {
+    box-shadow: 0 0 0 0.2rem #a69d91; }
+  .light-main-bg .key-bg-white .del-key-bg {
+    color: white;
+    background-color: #377f86;
+    border-color: #377f86; }
+  .light-main-bg .key-bg-white .del-key-bg:focus {
+    box-shadow: 0 0 0 0.2rem #1b5f65; }
+  .light-main-bg .key-bg-white .btn-equal-key {
+    color: white;
+    background-color: #ca5502;
+    border-color: #ca5502; }
+  .light-main-bg .key-bg-white .btn-equal-key:focus {
+    box-shadow: 0 0 0 0.2rem #893901; }
+
+/* ==== End Light Gray Background ====*/
+/* ==== Violet Background ====*/
+.violet-main-bg {
+  background-color: #160628; }
+  .violet-main-bg header h6, .violet-main-bg header span {
+    color: #ffe53d; }
+  .violet-main-bg .toggle-wrapper label {
+    color: #ffe53d; }
+  .violet-main-bg .toggle-wrapper label:first-of-type::before {
+    background-color: #1d0934; }
+  .violet-main-bg .toggle-wrapper label:last-of-type::after {
+    background-color: #00e0d1; }
+  .violet-main-bg .screen-box {
+    background-color: #1d0934; }
+    .violet-main-bg .screen-box input {
+      color: #ffe53d; }
+  .violet-main-bg .keypad {
+    background-color: #1d0934; }
+  .violet-main-bg .key-bg-white .btn-bg-color {
+    color: #ffe53d;
+    background-color: #341c4f;
+    border-color: #341c4f; }
+  .violet-main-bg .key-bg-white .btn-bg-color:active {
+    color: #ffe53d;
+    background-color: #341c4f;
+    border-color: #341c4f; }
+  .violet-main-bg .key-bg-white .btn-bg-color:focus {
+    box-shadow: 0 0 0 0.2rem #a69d91; }
+  .violet-main-bg .key-bg-white .del-key-bg {
+    color: white;
+    background-color: #58077d;
+    border-color: #58077d; }
+  .violet-main-bg .key-bg-white .del-key-bg:focus {
+    box-shadow: 0 0 0 0.2rem #bc15f4; }
+  .violet-main-bg .key-bg-white .btn-equal-key {
+    color: #1b2428;
+    background-color: #00e0d1;
+    border-color: #00e0d1; }
+  .violet-main-bg .key-bg-white .btn-equal-key:focus {
+    box-shadow: 0 0 0 0.2rem #6cf9f2; }
+
+/* ==== End Violet Background ====*/
 
 /*# sourceMappingURL=styles.css.map */
