@@ -15,7 +15,6 @@ $(document).ready(function () {
         if (equalPressed === true) {
             resetAll($(this).val());
             setScreen($(this).val());
-            console.log('reset');
             equalPressed = false;
         } else {
             setScreen($(this).val());
@@ -25,25 +24,21 @@ $(document).ready(function () {
 
     const setScreen = (value) => {
 
-        // value.toLocaleString('en-US');
-
         if (value === '.' && setScreenValue === '') {
 
             $(screenValue).val('0.');
             setScreenValue += '0.';
-            //console.log('empty')
 
         }else if (setScreenValue !== '0') {
             setScreenValue += value;
 
             setScreenValue =  setScreenValue;
             $(screenValue).val(setScreenValue);
-            //console.log('Full')
 
         } if ((setScreenValue === '0' && operationType === '') || (setScreenValue === '0' && operationType !== '')) {
             setScreenValue='';
             $(screenValue).val('0');
-            console.log('Entro')
+           
         }
 
         keyPressed = true;
@@ -71,7 +66,6 @@ $(document).ready(function () {
                 switch (operationType) {
                     case '+':
                         result = (arrValue[0] + arrValue[1]);
-                        console.log(arrValue[0] + '+' + arrValue[1])
                         break;
 
                     case '-':
@@ -98,11 +92,9 @@ $(document).ready(function () {
                 arrValue.length = 0;
                 arrValue.push(result);
 
-                //console.log(result)
-
             } catch (error) {
                 $(screenValue).val(error);
-                //console.log(error);
+               
             }
 
         } else { }
@@ -126,12 +118,12 @@ $(document).ready(function () {
 
         if (keyPressed === true) {
             verifyOpType(firstValue, opSymbol);
-            //console.log(firstValue);
+            
             keyPressed = false;
         } else {
 
             arrValue.length = 0;
-            //console.log(firstValue);
+           
             verifyOpType(firstValue, opSymbol);
         }
 
@@ -201,29 +193,4 @@ $(document).ready(function () {
         secondValue = 0;
         result = 0;
     }
-
-
-    // function addCommas(str){
-    //     return str.replace(/^0+/, '').replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // }
-
-    // function commaSeparateNumber(val){
-    //     while (/(\d+)(\d{3})/.test(val.toString())){
-    //       val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-    //     }
-    //     return val;
-    //   }
-
-    function filter(__val__){
-        var preg = /^([0-9]+\.?[0-9]{0,2})$/; 
-        if(preg.test(__val__) === true){
-            return true;
-        }else{
-           return false;
-        }
-        
-    }
-    
-
-
 });
