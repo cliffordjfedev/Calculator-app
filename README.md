@@ -92,3 +92,25 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+1) Teclear el valor 
+
+2) Capturar el primer valor tecleado al presionar una operacion.
+
+3) limpiar pantalla a la hora de teclear el segundo valor 
+
+4) hacer el calculo previo si se presiona cualquier signo de operacion o el boton de igual.
+
+Si el usuario quiere seguir operando con el boton de igual {  (como saber si quiere hacerlo)
+    se le manda la variable del primer valor para poder almacenar el RESULTADO y hacer la op
+}
+
+Si el usuario quiere seguir operando con el boton de signo {
+
+    capturar el resultado 
+    teclear tipo de operacion 
+    hacer el calculo
+
+}
+

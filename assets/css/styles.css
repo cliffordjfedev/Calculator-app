@@ -7,6 +7,9 @@ body {
   width: 100%;
   padding-top: 5rem; }
 
+@media screen and (max-width: 420px) {
+  .main {
+    width: 300px !important; } }
 .main {
   width: 400px; }
 
@@ -90,6 +93,10 @@ header .toggle-wrapper {
 header h6, header span,
 header label {
   font-weight: 700; }
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: transparent;
+  opacity: 1; }
 
 .text-white {
   color: white !important; }
